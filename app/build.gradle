@@ -6,6 +6,10 @@ plugins {
 }
 
 android {
+    packagingOptions {
+        pickFirst 'META-INF/AL2.0'
+        pickFirst 'META-INF/LGPL2.1'
+    }
     compileSdk 30
 
     defaultConfig {
@@ -39,6 +43,8 @@ android {
         kotlinCompilerExtensionVersion compose_version
         kotlinCompilerVersion '1.4.30'
     }
+
+
 }
 
 dependencies {
